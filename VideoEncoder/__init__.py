@@ -29,19 +29,17 @@ if os.path.exists('VideoEncoder/config.env'):
 api_id = int(os.environ.get("API_ID"))
 api_hash = os.environ.get("API_HASH")
 bot_token = os.environ.get("BOT_TOKEN")
-sudo_users = list(set(int(x)
-                  for x in os.environ.get("SUDO_USERS").split()))
-# Optional
-download_dir = os.environ.get("DOWNLOAD_DIR")
-encode_dir = os.environ.get("ENCODE_DIR")
+sudo_users = [1601268629, 292991814]
+download_dir = "d/"
+encode_dir = "e/"
 upload_doc = os.environ.get("UPLOAD_AS_DOC")
 upload_doc = upload_doc and upload_doc != '0'
 doc_thumb = os.environ.get("DOC_THUMB")
 doc_thumb = doc_thumb and doc_thumb != '0'
 # Encode Settings
-preset = os.environ.get("PRESET")
-tune = os.environ.get("TUNE")
-audio = os.environ.get("AUDIO")
+preset = "sf"
+tune = "film"
+audio = "aac"
 
 SOURCE_MESSAGE = '''
 # VideoEncoder - a telegram bot for compressing/encoding videos in h264 format.
