@@ -1,4 +1,4 @@
-# Video-Encoder-Bot
+# Video-Encoder-Bott
  a telegram bot for compressing/encoding videos in h264 format.
 
 ### Configuration
